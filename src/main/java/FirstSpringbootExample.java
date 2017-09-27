@@ -15,6 +15,11 @@ public class FirstSpringbootExample {
     return "hello world!";
   }
 
+  @RequestMapping("/you")
+  String home2() {
+    return "hello you";
+  }
+
   public static void main(String[] args) {
     SpringApplication.run(FirstSpringbootExample.class, args);
   }
